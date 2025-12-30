@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+.site-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: #f9f9f9;
+}
+
+.brand-name,
+.base-logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #75bf7a;
+}
+
+.main-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.support-action {
+  background-color: #75bf7a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.intro-block {
+  display: flex;
+  padding: 50px 8%;
+  align-items: center;
+}
+
+.intro-txt {
+  flex: 1;
+}
+
+.intro-txt h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.intro-txt p {
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.app-links {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  left: -50px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.get-app-btn {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.get-app-btn i {
+  font-size: 20px; 
+}
+.intro-graphic {
+  flex: 1;
+  text-align: right;
+}
+
+.intro-graphic img {
+  max-width: 100%;
+}
+
+.promo-strip {
+  background-color: #75bf7a;
+  padding: 30px 8%;
+  color: white;
+}
+
+.promo-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.form-wrapper input {
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+}
+
+.form-wrapper button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.process-guide {
+  text-align: center;
+  padding: 80px 8%;
+}
+
+.green-text {
+  color: #75bf7a;
+}
+
+.guide-desc {
+  max-width: 600px;
+  margin: 20px auto 50px;
+  color: #888;
+}
+
+.flow-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.center-oval {
+  width: 300px;
+  height: 300px;
+  background-color: #75bf7a;
+  border-radius: 50%;
+}
+
+.flow-left,
+.flow-right {
+  width: 30%;
+  text-align: left;
+}
+
+.flow-card {
+  margin-bottom: 40px;
+}
+
+.step-digit {
+  background-image: url("./circle\ icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #75bf7a;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border: none;
+}
+
+.perks-area {
+  padding: 80px 8%;
+  background-color: #f9f9f9;
+}
+
+.perks-area h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.perk-box-1 {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  right: 100px;
+  position: relative;
+}
+
+.perk-box {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.perk-box.flipped {
+  position: relative;
+  flex-direction: row-reverse;
+  left: 100px;
+}
+
+.perk-index {
+  font-size: 40px;
+  color: #75bf7a;
+  font-weight: bold;
+  display: block;
+}
+
+.site-base {
+  padding: 50px 8%;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.base-contact {
+  display: flex;
+  gap: 40px;
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .site-top-bar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 5%;
+    text-align: center;
+  }
+
+  .brand-name,
+  .base-logo {
+    font-size: 28px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .intro-block {
+    flex-direction: column;
+    padding: 30px 5%;
+    text-align: center;
+  }
+
+  .intro-txt h1 {
+    font-size: 28px;
+  }
+
+  .intro-graphic {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .promo-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .form-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-wrapper input {
+    width: 100%;
+  }
+
+  .flow-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .flow-left,
+  .flow-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .center-oval {
+    width: 200px;
+    height: 200px;
+    order: -1;
+  }
+
+  .flow-card {
+    margin-bottom: 30px;
+  }
+
+  .perk-box,
+  .perk-box.flipped {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .perk-visual {
+    margin-top: 20px;
+  }
+
+  .site-base {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .base-contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .site-top-bar .brand-name {
+    font-size: 28px;
+  }
+
+  .promo-strip,
+  .perks-area,
+  .process-guide {
+    padding: 20px 5%;
+  }
+  .app-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .get-app-btn {
+    width: 80%; 
+    justify-content: center;
+  }
+
+  .get-app-btn i {
+    font-size: 18px; 
+  }
+}
